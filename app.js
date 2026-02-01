@@ -416,24 +416,24 @@ class PortfolioApp {
     getSkillsData() {
         return [
             new Skill(
-                'Frontend Development',
-                'Creating responsive and interactive user interfaces using modern web technologies like HTML5, CSS3, and JavaScript.',
-                '🎨'
+                'AI/ML',
+                'Applied ML, explainable AI, data pipelines, model analysis, and deployment.',
+                '💻'
             ),
             new Skill(
-                'Backend Development',
-                'Building robust server-side applications and RESTful APIs using Node.js, Python, and various databases.',
+                'Autonomous Systems',
+                'Control algorithms, trajectory tracking, telemetry analysis',
                 '⚙️'
             ),
             new Skill(
-                'UI/UX Design',
-                'Designing intuitive and beautiful user experiences with tools like Figma, Adobe XD, and Sketch.',
-                '✨'
+                'Mathematics & Statistics',
+                'Probability, nonlinear systems, time-series analysis, statistical modelling.',
+                '📈'
             ),
             new Skill(
-                'Mobile Development',
-                'Developing cross-platform mobile applications using React Native and Flutter frameworks.',
-                '📱'
+                'Software Engineering',
+                'Python, C/C++, SQL, full-stack web development',
+                '👨🏻‍💻'
             ),
             new Skill(
                 'DevOps & Cloud',
@@ -441,9 +441,9 @@ class PortfolioApp {
                 '☁️'
             ),
             new Skill(
-                'Database Management',
-                'Designing and optimizing databases using SQL, MongoDB, and PostgreSQL for scalable applications.',
-                '💾'
+                'Data & Tools',
+                'Designing and optimizing databases using SQL, MongoDB, and PostgreSQL for scalable applications. Also data maniupulation with NumPy and pandas.',
+                '⛁'
             )
         ];
     }
