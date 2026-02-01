@@ -451,27 +451,27 @@ class PortfolioApp {
     getPortfolioData() {
         return [
             new PortfolioItem(
-                'E-Commerce Platform',
-                'A full-stack e-commerce solution with payment integration, inventory management, and user authentication.',
-                ['React', 'Node.js', 'MongoDB', 'Stripe'],
+                'Yeditepe Chaos Theory Researcher',
+                'A research paper exploring non-linear forecasting techniques and mathematical and statistical modelling for Air Pollution.',
+                ['Python', 'Pandas', 'NumPy'],
                 null
             ),
             new PortfolioItem(
-                'Task Management App',
-                'A collaborative task management application with real-time updates and team collaboration features.',
-                ['Vue.js', 'Firebase', 'Vuex'],
+                'ML Stock Price Predictor',
+                'A machine learning model that predicts stock prices using historical data and technical indicators.',
+                ['Python', 'Scikit-learn', 'Pandas', 'NumPy'],
                 null
             ),
             new PortfolioItem(
-                'Portfolio Website',
-                'A modern, responsive portfolio website showcasing creative work with smooth animations and interactions.',
-                ['HTML', 'CSS', 'JavaScript', 'GSAP'],
+                'Weathify',
+                'A music recommendation web app that suggests songs based on current weather conditions using geolocation and weather APIs.',
+                ['HTML', 'CSS', 'PHP', 'MySQL', 'Geolocation API, OpenWeatherMap API'],
                 null
             ),
             new PortfolioItem(
-                'Weather Dashboard',
-                'A weather forecasting application with interactive maps and detailed climate data visualization.',
-                ['React', 'API Integration', 'Chart.js'],
+                'Weathify',
+                'A music recommendation web app that suggests songs based on current weather conditions using geolocation and weather APIs.',
+                ['HTML', 'CSS', 'PHP', 'MySQL', 'Geolocation API, OpenWeatherMap API'],
                 null
             ),
             new PortfolioItem(
@@ -492,28 +492,28 @@ class PortfolioApp {
     getTimelineData() {
         return [
             new TimelineItem(
-                '2023 - Present',
-                'Senior Full Stack Developer',
-                'Tech Solutions Inc.',
-                'Leading development teams in creating scalable web applications. Implementing best practices and mentoring junior developers.'
+                '2025 - Present',
+                'Control Junior Engineer',
+                'Manchester Stinger Motorsports',
+                'Autonomous Systems Developer focusing on control systems for autonomous racing at Formula Student. Responsible for developing algorithms and software to enhance vehicle performance and safety.'
             ),
             new TimelineItem(
-                '2021 - 2023',
-                'Full Stack Developer',
-                'Digital Innovations Ltd.',
-                'Developed and maintained multiple client projects using modern web technologies. Collaborated with designers and product managers to deliver high-quality solutions.'
+                '2025 - 2028',
+                'Bachelor (Hons) of Computer Science & Mathematics',
+                'University of Manchester',
+                'Expected First Class Honours. Relevant modules focused on Mathematical modelling, statistics, probability and software engineering.'
             ),
             new TimelineItem(
-                '2019 - 2021',
-                'Frontend Developer',
-                'Creative Web Agency',
-                'Specialized in creating responsive and interactive user interfaces. Worked closely with UX designers to implement pixel-perfect designs.'
+                '2024 - 2025',
+                'Researcher',
+                'Yeditepe University',
+                'Conducted research on chaos theory and its applications in non-linear forecasting techniques. Published a paper on Air Pollution forecasting using mathematical and statistical modelling.'
             ),
             new TimelineItem(
-                '2017 - 2019',
-                'Bachelor of Computer Science',
-                'University of Technology',
-                'Graduated with honors. Focused on software engineering, web development, and user experience design.'
+                '2024 - 2024',
+                'Software Engineering Intern',
+                'BASARSOFT',
+                'Facilitated large-scale GIS data validation for city-scale mapping projects covering 21 million door number. Developed internal tools to streamline data processing and improve accuracy.'
             )
         ];
     }
