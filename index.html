@@ -18,7 +18,8 @@
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -37,10 +38,10 @@
                     <span class="hero-name">Berke Tunc</span>
                 </h1>
                 <p class="hero-subtitle">AI/ML Engineer & Autonomous Systems Developer</p>
-                <p class="hero-description">Building intelligent systems that push the boundaries of what's possible</p>
+                <p class="hero-description">Building and analyzing intelligent systems that push the boundaries of what's possible</p>
                 <div class="hero-cta">
                     <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="Berke_TuncCV_.pdf" class="btn btn-secondary" download>Download CV</a>
+                    <a href="Berke_Tunc_CV.pdf" class="btn btn-secondary" download>Download CV</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
@@ -67,17 +68,14 @@
                 <div class="about-text">
                     <p class="about-intro">
                         I'm a First Year Computer Science & Mathematics undergraduate at the University of Manchester, 
-                        with a strong focus on AI/ML, autonomous systems, and data-driven decision making. I enjoy working 
+                        with a strong focus on AI/ML, autonomous systems, and quantitative work. I enjoy working 
                         at the intersection of theory and application, where mathematical foundations meet real-world engineering challenges.
                     </p>
                     <p class="about-description">
-                        I have hands-on experience developing control algorithms for autonomous vehicles, conducting nonlinear time-series research, 
-                        and building data pipelines for analysis and visualization. Through research projects, internships, and Formula Student, 
-                        I’ve worked across perception, planning, control, and data engineering stacks.
+                        I build mathematically grounded AI systems for complex, real-world dynamics. Ranging from autonomous vehicles to chaotic time-series.
                     </p>
                     <p class="about-description">
-                        I’m particularly interested in intelligent systems, applied machine learning, and quantitative analysis, and I enjoy tackling 
-                        problems that require both rigorous reasoning and practical implementation.
+                        I use mathematically driven approaches to develop robust, interpretable models that can adapt to probabilities and uncertain environments.
                     </p>
                 </div>
             </div>
@@ -104,13 +102,25 @@
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section class="section resume" id="resume">
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
         <div class="container">
-            <h2 class="section-title">Experience & Education</h2>
+            <h2 class="section-title">Experience</h2>
             <div class="resume-content">
-                <div class="timeline" id="timeline">
-                    <!-- Timeline items will be injected by JavaScript -->
+                <div class="timeline" id="experienceTimeline">
+                    <!-- Experience items will be injected by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="resume-content">
+                <div class="timeline" id="educationTimeline">
+                    <!-- Education items will be injected by JavaScript -->
                 </div>
             </div>
         </div>
@@ -119,8 +129,8 @@
     <!-- Contact Section -->
     <section class="section contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
+            <h2 class="section-title">Contact Me!</h2>
+            <div class="contact-info-centered">
                 <div class="contact-info">
                     <p class="contact-description">
                         I'm always interested in hearing about new projects and opportunities. 
@@ -151,23 +161,6 @@
                                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
                             </svg>
                         </a>
-                    </div>
-                </div>
-                <div class="contact-form-container">
-                    <div class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
                     </div>
                 </div>
             </div>

@@ -647,6 +647,20 @@ body {
     margin: 0 auto;
 }
 
+.contact-info-centered {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info-centered .contact-methods {
+    justify-content: center;
+}
+
+.contact-info-centered .social-links {
+    justify-content: center;
+}
+
 .contact-description {
     font-size: 1.1rem;
     color: var(--color-text-light);

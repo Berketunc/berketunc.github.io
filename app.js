@@ -271,8 +271,8 @@ class PortfolioGrid extends Component {
  * Timeline Component
  */
 class Timeline extends Component {
-    constructor(items) {
-        super(document.getElementById('timeline'));
+    constructor(items, elementId = 'timeline') {
+        super(document.getElementById(elementId));
         this.items = items;
         this.render();
     }
@@ -309,11 +309,17 @@ class Timeline extends Component {
  */
 class ContactForm extends Component {
     constructor() {
-        super(document.getElementById('contactForm'));
+        const formElement = document.getElementById('contactForm');
+        if (!formElement) {
+            // Form doesn't exist, skip initialization
+            return;
+        }
+        super(formElement);
         this.init();
     }
 
     init() {
+        if (!this.element) return;
         this.element.addEventListener('submit', (e) => this.handleSubmit(e));
     }
 
@@ -402,11 +408,12 @@ class PortfolioApp {
         const portfolioItems = this.getPortfolioData();
         new PortfolioGrid(portfolioItems);
 
-        // Initialize timeline section
-        const timelineItems = this.getTimelineData();
-        new Timeline(timelineItems);
+        // Initialize experience and education timelines
+        const { experience, education } = this.getTimelineData();
+        new Timeline(experience, 'experienceTimeline');
+        new Timeline(education, 'educationTimeline');
 
-        // Initialize contact form
+        // Initialize contact form (will skip if element doesn't exist)
         new ContactForm();
 
         // Initialize scroll animations
@@ -457,9 +464,9 @@ class PortfolioApp {
                 null
             ),
             new PortfolioItem(
-                'ML Stock Price Predictor',
-                'A machine learning model that predicts stock prices using historical data and technical indicators.',
-                ['Python', 'Scikit-learn', 'Pandas', 'NumPy'],
+                'ML Stock Trend Predictor',
+                'A machine learning model that predicts stock trends using historical data and technical indicators.',
+                ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'XGBoost'],
                 null
             ),
             new PortfolioItem(
@@ -469,9 +476,9 @@ class PortfolioApp {
                 null
             ),
             new PortfolioItem(
-                'Weathify',
-                'A music recommendation web app that suggests songs based on current weather conditions using geolocation and weather APIs.',
-                ['HTML', 'CSS', 'PHP', 'MySQL', 'Geolocation API, OpenWeatherMap API'],
+                'Personal Website',
+                'A responsive personal website showcasing projects, skills, and experience.',
+                ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
                 null
             ),
             new PortfolioItem(
@@ -490,32 +497,49 @@ class PortfolioApp {
     }
 
     getTimelineData() {
-        return [
+        const experience = [
             new TimelineItem(
-                '2025 - Present',
+                'Sep 2025 - Present',
                 'Control Junior Engineer',
                 'Manchester Stinger Motorsports',
-                'Autonomous Systems Developer focusing on control systems for autonomous racing at Formula Student. Responsible for developing algorithms and software to enhance vehicle performance and safety.'
+                'Developing control algorithms for autonomous race car in Formula Student. Responsible for developing algorithms and software to enhance vehicle performance and safety. Improved trajectory tracking accuracy by 80% and response latency by 18ms.'
             ),
             new TimelineItem(
-                '2025 - 2028',
-                'Bachelor (Hons) of Computer Science & Mathematics',
-                'University of Manchester',
-                'Expected First Class Honours. Relevant modules focused on Mathematical modelling, statistics, probability and software engineering.'
-            ),
-            new TimelineItem(
-                '2024 - 2025',
-                'Researcher',
+                'May 2024 - Jun 2025',
+                'Research Co-Author',
                 'Yeditepe University',
-                'Conducted research on chaos theory and its applications in non-linear forecasting techniques. Published a paper on Air Pollution forecasting using mathematical and statistical modelling.'
+                'Conducted a nonlinear time-series analysis on environmental datasets using mathematical and statistical modelling. The paper presented at CHAOS 2025 International conference.'
             ),
             new TimelineItem(
-                '2024 - 2024',
+                'Jul 2024 - Aug 2024',
                 'Software Engineering Intern',
                 'BASARSOFT',
-                'Facilitated large-scale GIS data validation for city-scale mapping projects covering 21 million door number. Developed internal tools to streamline data processing and improve accuracy.'
+                'Large-scale GIS data validation for 21 million door numbers. Improved data integrity across 3 systems by 40%.'
+            ),
+        ];
+
+        const education = [
+            new TimelineItem(
+                'Sep 2025 - Jun 2028',
+                'BSc (Hons) Computer Science & Mathematics - Expected First',
+                'University of Manchester',
+                'Relevant modules are focused on Mathematical modelling, statistics, probability and software engineering.'
+            ),
+            new TimelineItem(
+                'Jul 2024',
+                'Summer School Program',
+                'Sabanci University',
+                'Completed modules in Machine Learning, Artificial Intelligence, and Data Science.'
+            ),
+            new TimelineItem(
+                '2020 - 2025',
+                'International Baccalaureate Diploma',
+                'FMV Isik Erenkoy Highschool',
+                'Higher Level: Mathematics Analysis & Approaches, Physics.'
             )
         ];
+
+        return { experience, education };
     }
 }
 
