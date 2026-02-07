@@ -482,9 +482,9 @@ class PortfolioApp {
                 null
             ),
             new PortfolioItem(
-                'Social Media App',
-                'A social networking platform with photo sharing, messaging, and content discovery features.',
-                ['React Native', 'Node.js', 'PostgreSQL'],
+                'ExclusiveLibrary',
+                'A desktop application for personal use. This application allows users to manage their physical book collection through a local SQlite database.',
+                ['Java', 'JavaFX (Framework)', 'SQLite'],
                 null
             ),
             new PortfolioItem(
